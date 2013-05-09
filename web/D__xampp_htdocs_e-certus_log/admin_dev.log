@@ -1,0 +1,677 @@
+Oct 17 21:29:54 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Oct 17 21:29:54 symfony [info] {myUser} Automatic user logout due to timeout
+Oct 17 21:29:54 symfony [info] {myUser} User is not authenticated
+Oct 17 21:29:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:29:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:29:54 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Oct 17 21:29:54 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Oct 17 21:29:54 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Oct 17 21:29:54 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Oct 17 21:29:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:29:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:29:54 symfony [info] {sfWebDebugLogger} Configuration 268.24 ms (10)
+Oct 17 21:29:54 symfony [info] {sfWebDebugLogger} Factories 54.50 ms (1)
+Oct 17 21:29:54 symfony [info] {sfWebDebugLogger} Action "default/index" 0.18 ms (1)
+Oct 17 21:29:54 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 172.42 ms (1)
+Oct 17 21:29:54 symfony [info] {sfWebResponse} Send content (29803 o)
+Oct 17 21:30:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /courier with parameters array (  'module' => 'courier',  'action' => 'index',)
+Oct 17 21:30:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:30:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:30:05 symfony [info] {courierActions} Call "courierActions->executeIndex()"
+Oct 17 21:30:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:30:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 21:30:05 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/indexSuccess.php"
+Oct 17 21:30:05 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:30:05 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:30:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:30:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:30:05 symfony [info] {sfWebDebugLogger} Configuration 1.77 ms (9)
+Oct 17 21:30:05 symfony [info] {sfWebDebugLogger} Factories 37.51 ms (1)
+Oct 17 21:30:05 symfony [info] {sfWebDebugLogger} Action "courier/index" 83.55 ms (1)
+Oct 17 21:30:05 symfony [info] {sfWebDebugLogger} View "Success" for "courier/index" 16.72 ms (1)
+Oct 17 21:30:05 symfony [info] {sfWebResponse} Send content (29877 o)
+Oct 17 21:30:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /courier/new with parameters array (  'module' => 'courier',  'action' => 'new',)
+Oct 17 21:30:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:30:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:30:07 symfony [info] {courierActions} Call "courierActions->executeNew()"
+Oct 17 21:30:07 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/newSuccess.php"
+Oct 17 21:30:07 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/_form.php"
+Oct 17 21:30:07 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:30:07 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:30:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:30:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:30:07 symfony [info] {sfWebDebugLogger} Configuration 1.49 ms (9)
+Oct 17 21:30:07 symfony [info] {sfWebDebugLogger} Factories 35.29 ms (1)
+Oct 17 21:30:07 symfony [info] {sfWebDebugLogger} Action "courier/new" 28.94 ms (1)
+Oct 17 21:30:07 symfony [info] {sfWebDebugLogger} View "Success" for "courier/new" 20.85 ms (1)
+Oct 17 21:30:07 symfony [info] {sfWebDebugLogger} Partial "courier/_form" 5.18 ms (1)
+Oct 17 21:30:07 symfony [info] {sfWebResponse} Send content (31343 o)
+Oct 17 21:30:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /courier/create with parameters array (  'module' => 'courier',  'action' => 'create',)
+Oct 17 21:30:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:30:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:30:13 symfony [info] {courierActions} Call "courierActions->executeCreate()"
+Oct 17 21:30:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.0 MB | mempeak:    5.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:30:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | INSERT INTO courier (`ID`,`NAME`) VALUES (NULL,'UPS')
+Oct 17 21:30:13 symfony [info] {sfFrontWebController} Redirect to "http://rally.localhost/e-certus/web/admin_dev.php/courier/edit/id/1"
+Oct 17 21:30:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Oct 17 21:30:13 symfony [info] {sfWebResponse} Send header "Location: http://rally.localhost/e-certus/web/admin_dev.php/courier/edit/id/1"
+Oct 17 21:30:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:30:13 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (8)
+Oct 17 21:30:13 symfony [info] {sfWebDebugLogger} Factories 38.14 ms (1)
+Oct 17 21:30:13 symfony [info] {sfWebDebugLogger} Action "courier/create" 43.87 ms (1)
+Oct 17 21:30:13 symfony [info] {sfWebResponse} Send content (138 o)
+Oct 17 21:30:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /courier/edit/id/1 with parameters array (  'module' => 'courier',  'action' => 'edit',  'id' => '1',)
+Oct 17 21:30:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:30:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:30:13 symfony [info] {courierActions} Call "courierActions->executeEdit()"
+Oct 17 21:30:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:30:13 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier` WHERE courier.ID='1'
+Oct 17 21:30:13 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/editSuccess.php"
+Oct 17 21:30:13 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/_form.php"
+Oct 17 21:30:13 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:30:13 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:30:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:30:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:30:13 symfony [info] {sfWebDebugLogger} Configuration 1.59 ms (9)
+Oct 17 21:30:13 symfony [info] {sfWebDebugLogger} Factories 40.94 ms (1)
+Oct 17 21:30:13 symfony [info] {sfWebDebugLogger} Action "courier/edit" 42.04 ms (1)
+Oct 17 21:30:13 symfony [info] {sfWebDebugLogger} View "Success" for "courier/edit" 22.01 ms (1)
+Oct 17 21:30:13 symfony [info] {sfWebDebugLogger} Partial "courier/_form" 6.28 ms (1)
+Oct 17 21:30:13 symfony [info] {sfWebResponse} Send content (34572 o)
+Oct 17 21:30:14 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /courier with parameters array (  'module' => 'courier',  'action' => 'index',)
+Oct 17 21:30:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:30:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:30:14 symfony [info] {courierActions} Call "courierActions->executeIndex()"
+Oct 17 21:30:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:30:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 21:30:14 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/indexSuccess.php"
+Oct 17 21:30:15 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:30:15 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:30:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:30:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:30:15 symfony [info] {sfWebDebugLogger} Configuration 1.54 ms (9)
+Oct 17 21:30:15 symfony [info] {sfWebDebugLogger} Factories 39.99 ms (1)
+Oct 17 21:30:15 symfony [info] {sfWebDebugLogger} Action "courier/index" 27.17 ms (1)
+Oct 17 21:30:15 symfony [info] {sfWebDebugLogger} View "Success" for "courier/index" 16.53 ms (1)
+Oct 17 21:30:15 symfony [info] {sfWebResponse} Send content (30093 o)
+Oct 17 21:32:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /shipping_prices_groups with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'index',)
+Oct 17 21:32:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:32:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:32:39 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeIndex()"
+Oct 17 21:32:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:32:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 21:32:39 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/indexSuccess.php"
+Oct 17 21:32:39 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:32:39 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:32:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:32:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:32:39 symfony [info] {sfWebDebugLogger} Configuration 1.71 ms (9)
+Oct 17 21:32:39 symfony [info] {sfWebDebugLogger} Factories 38.03 ms (1)
+Oct 17 21:32:39 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/index" 21.97 ms (1)
+Oct 17 21:32:39 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices_groups/index" 15.19 ms (1)
+Oct 17 21:32:39 symfony [info] {sfWebResponse} Send content (30402 o)
+Oct 17 21:32:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices_groups/new with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'new',)
+Oct 17 21:32:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:32:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:32:41 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeNew()"
+Oct 17 21:32:41 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/newSuccess.php"
+Oct 17 21:32:41 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/_form.php"
+Oct 17 21:32:41 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:32:41 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:32:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:32:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:32:41 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (9)
+Oct 17 21:32:41 symfony [info] {sfWebDebugLogger} Factories 37.35 ms (1)
+Oct 17 21:32:41 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/new" 28.23 ms (1)
+Oct 17 21:32:41 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices_groups/new" 20.57 ms (1)
+Oct 17 21:32:41 symfony [info] {sfWebDebugLogger} Partial "shipping_prices_groups/_form" 5.50 ms (1)
+Oct 17 21:32:41 symfony [info] {sfWebResponse} Send content (32611 o)
+Oct 17 21:33:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices_groups/create with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'create',)
+Oct 17 21:33:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:33:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:33:34 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeCreate()"
+Oct 17 21:33:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.0 MB | mempeak:    5.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:33:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | INSERT INTO shipping_prices_groups (`ID`,`NAME`,`IS_ACTIVE`) VALUES (NULL,'doręczenie następnego dnia roboczego',1)
+Oct 17 21:33:34 symfony [info] {sfFrontWebController} Redirect to "http://rally.localhost/e-certus/web/admin_dev.php/shipping_prices_groups/edit/id/1"
+Oct 17 21:33:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Oct 17 21:33:34 symfony [info] {sfWebResponse} Send header "Location: http://rally.localhost/e-certus/web/admin_dev.php/shipping_prices_groups/edit/id/1"
+Oct 17 21:33:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:33:34 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (8)
+Oct 17 21:33:34 symfony [info] {sfWebDebugLogger} Factories 37.08 ms (1)
+Oct 17 21:33:34 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/create" 46.30 ms (1)
+Oct 17 21:33:34 symfony [info] {sfWebResponse} Send content (153 o)
+Oct 17 21:33:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices_groups/edit/id/1 with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'edit',  'id' => '1',)
+Oct 17 21:33:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:33:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:33:35 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeEdit()"
+Oct 17 21:33:35 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:33:35 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups` WHERE shipping_prices_groups.ID='1'
+Oct 17 21:33:35 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/editSuccess.php"
+Oct 17 21:33:35 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/_form.php"
+Oct 17 21:33:35 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:33:35 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:33:35 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (9)
+Oct 17 21:33:35 symfony [info] {sfWebDebugLogger} Factories 36.82 ms (1)
+Oct 17 21:33:35 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/edit" 39.53 ms (1)
+Oct 17 21:33:35 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices_groups/edit" 21.77 ms (1)
+Oct 17 21:33:35 symfony [info] {sfWebDebugLogger} Partial "shipping_prices_groups/_form" 6.59 ms (1)
+Oct 17 21:33:35 symfony [info] {sfWebResponse} Send content (36078 o)
+Oct 17 21:35:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /shipping_products with parameters array (  'module' => 'shipping_products',  'action' => 'index',)
+Oct 17 21:35:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:35:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:35:12 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeIndex()"
+Oct 17 21:35:12 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:35:12 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT shipping_products.ID, shipping_products.NAME, shipping_products.IS_ACTIVE, shipping_products.WEIGHT_FROM, shipping_products.WEIGHT_TO FROM `shipping_products`
+Oct 17 21:35:12 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/indexSuccess.php"
+Oct 17 21:35:12 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:35:12 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:35:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:35:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:35:12 symfony [info] {sfWebDebugLogger} Configuration 1.60 ms (9)
+Oct 17 21:35:12 symfony [info] {sfWebDebugLogger} Factories 37.60 ms (1)
+Oct 17 21:35:12 symfony [info] {sfWebDebugLogger} Action "shipping_products/index" 21.69 ms (1)
+Oct 17 21:35:12 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_products/index" 15.15 ms (1)
+Oct 17 21:35:12 symfony [info] {sfWebResponse} Send content (30421 o)
+Oct 17 21:35:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_products/new with parameters array (  'module' => 'shipping_products',  'action' => 'new',)
+Oct 17 21:35:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:35:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:35:15 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeNew()"
+Oct 17 21:35:15 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/newSuccess.php"
+Oct 17 21:35:16 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/_form.php"
+Oct 17 21:35:16 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:35:16 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:35:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:35:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:35:16 symfony [info] {sfWebDebugLogger} Configuration 1.51 ms (9)
+Oct 17 21:35:16 symfony [info] {sfWebDebugLogger} Factories 38.15 ms (1)
+Oct 17 21:35:16 symfony [info] {sfWebDebugLogger} Action "shipping_products/new" 29.53 ms (1)
+Oct 17 21:35:16 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_products/new" 301.84 ms (1)
+Oct 17 21:35:16 symfony [info] {sfWebDebugLogger} Partial "shipping_products/_form" 6.84 ms (1)
+Oct 17 21:35:16 symfony [info] {sfWebResponse} Send content (33697 o)
+Oct 17 21:36:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_products/create with parameters array (  'module' => 'shipping_products',  'action' => 'create',)
+Oct 17 21:36:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:36:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:36:21 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeCreate()"
+Oct 17 21:36:21 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.0 MB | mempeak:    5.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:36:21 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | INSERT INTO shipping_products (`ID`,`NAME`,`IS_ACTIVE`,`WEIGHT_FROM`,`WEIGHT_TO`) VALUES (NULL,'Przesyłka kopertowa oraz paczka do 30 kg',1,'0','30')
+Oct 17 21:36:21 symfony [info] {sfFrontWebController} Redirect to "http://rally.localhost/e-certus/web/admin_dev.php/shipping_products/edit/id/1"
+Oct 17 21:36:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Oct 17 21:36:21 symfony [info] {sfWebResponse} Send header "Location: http://rally.localhost/e-certus/web/admin_dev.php/shipping_products/edit/id/1"
+Oct 17 21:36:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:36:21 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (8)
+Oct 17 21:36:21 symfony [info] {sfWebDebugLogger} Factories 38.98 ms (1)
+Oct 17 21:36:21 symfony [info] {sfWebDebugLogger} Action "shipping_products/create" 44.60 ms (1)
+Oct 17 21:36:21 symfony [info] {sfWebResponse} Send content (148 o)
+Oct 17 21:36:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_products/edit/id/1 with parameters array (  'module' => 'shipping_products',  'action' => 'edit',  'id' => '1',)
+Oct 17 21:36:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:36:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:36:21 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeEdit()"
+Oct 17 21:36:22 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:36:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT shipping_products.ID, shipping_products.NAME, shipping_products.IS_ACTIVE, shipping_products.WEIGHT_FROM, shipping_products.WEIGHT_TO FROM `shipping_products` WHERE shipping_products.ID='1'
+Oct 17 21:36:22 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/editSuccess.php"
+Oct 17 21:36:22 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/_form.php"
+Oct 17 21:36:22 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:36:22 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:36:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:36:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:36:22 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (9)
+Oct 17 21:36:22 symfony [info] {sfWebDebugLogger} Factories 37.73 ms (1)
+Oct 17 21:36:22 symfony [info] {sfWebDebugLogger} Action "shipping_products/edit" 40.10 ms (1)
+Oct 17 21:36:22 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_products/edit" 22.19 ms (1)
+Oct 17 21:36:22 symfony [info] {sfWebDebugLogger} Partial "shipping_products/_form" 7.02 ms (1)
+Oct 17 21:36:22 symfony [info] {sfWebResponse} Send content (37260 o)
+Oct 17 21:37:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /shipping_prices with parameters array (  'module' => 'shipping_prices',  'action' => 'index',)
+Oct 17 21:37:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:37:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:37:13 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeIndex()"
+Oct 17 21:37:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:37:13 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT shipping_prices.ID, shipping_prices.COURIER_ID, shipping_prices.GROUP_ID, shipping_prices.PRODUCT_ID, shipping_prices.NAME, shipping_prices.SERVICE_ID, shipping_prices.PRICE, shipping_prices.PROM_PRICE, shipping_prices.IS_DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE_WHAT_IF, shipping_prices.SHOW, shipping_prices.IS_DEFAULT, shipping_prices.IS_PROM, shipping_prices.IS_AVAILABLE, shipping_prices.NOTICE FROM `shipping_prices`
+Oct 17 21:37:13 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/indexSuccess.php"
+Oct 17 21:37:13 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:37:13 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:37:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:37:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:37:13 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (9)
+Oct 17 21:37:13 symfony [info] {sfWebDebugLogger} Factories 40.47 ms (1)
+Oct 17 21:37:13 symfony [info] {sfWebDebugLogger} Action "shipping_prices/index" 28.36 ms (1)
+Oct 17 21:37:13 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/index" 14.99 ms (1)
+Oct 17 21:37:13 symfony [info] {sfWebResponse} Send content (31250 o)
+Oct 17 21:37:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/new with parameters array (  'module' => 'shipping_prices',  'action' => 'new',)
+Oct 17 21:37:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:37:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:37:15 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeNew()"
+Oct 17 21:37:15 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/newSuccess.php"
+Oct 17 21:37:15 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/_form.php"
+Oct 17 21:37:15 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:37:15 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 21:37:15 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 21:37:15 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT shipping_products.ID, shipping_products.NAME, shipping_products.IS_ACTIVE, shipping_products.WEIGHT_FROM, shipping_products.WEIGHT_TO FROM `shipping_products`
+Oct 17 21:37:15 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:37:15 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:37:15 symfony [err] {RuntimeException} Class "ShippingProducts" must implement a "__toString" method to be rendered in a "sfWidgetFormPropelChoice" widget
+Oct 17 21:37:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 17 21:37:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:37:15 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (9)
+Oct 17 21:37:15 symfony [info] {sfWebDebugLogger} Factories 37.61 ms (1)
+Oct 17 21:37:15 symfony [info] {sfWebDebugLogger} Action "shipping_prices/new" 41.56 ms (1)
+Oct 17 21:37:15 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/new" 351.62 ms (1)
+Oct 17 21:37:15 symfony [info] {sfWebDebugLogger} Partial "shipping_prices/_form" 336.43 ms (1)
+Oct 17 21:42:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/new with parameters array (  'module' => 'shipping_prices',  'action' => 'new',)
+Oct 17 21:42:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:42:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:42:05 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeNew()"
+Oct 17 21:42:05 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/newSuccess.php"
+Oct 17 21:42:05 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/_form.php"
+Oct 17 21:42:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:42:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 21:42:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 21:42:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT shipping_products.ID, shipping_products.NAME, shipping_products.IS_ACTIVE, shipping_products.WEIGHT_FROM, shipping_products.WEIGHT_TO FROM `shipping_products`
+Oct 17 21:42:05 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:42:05 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:42:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:42:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:42:05 symfony [info] {sfWebDebugLogger} Configuration 1.57 ms (9)
+Oct 17 21:42:05 symfony [info] {sfWebDebugLogger} Factories 37.83 ms (1)
+Oct 17 21:42:05 symfony [info] {sfWebDebugLogger} Action "shipping_prices/new" 39.31 ms (1)
+Oct 17 21:42:05 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/new" 59.49 ms (1)
+Oct 17 21:42:05 symfony [info] {sfWebDebugLogger} Partial "shipping_prices/_form" 44.32 ms (1)
+Oct 17 21:42:05 symfony [info] {sfWebResponse} Send content (45770 o)
+Oct 17 21:42:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/create with parameters array (  'module' => 'shipping_prices',  'action' => 'create',)
+Oct 17 21:42:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 21:42:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 21:42:59 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeCreate()"
+Oct 17 21:42:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 21:42:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `courier` WHERE courier.ID='1'
+Oct 17 21:42:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `shipping_prices_groups` WHERE shipping_prices_groups.ID='1'
+Oct 17 21:42:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `shipping_products` WHERE shipping_products.ID='1'
+Oct 17 21:42:59 symfony [info] {shipping_pricesActions} Change template to "CURRENT/new"
+Oct 17 21:42:59 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/newSuccess.php"
+Oct 17 21:42:59 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/_form.php"
+Oct 17 21:42:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 21:42:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 21:42:59 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT shipping_products.ID, shipping_products.NAME, shipping_products.IS_ACTIVE, shipping_products.WEIGHT_FROM, shipping_products.WEIGHT_TO FROM `shipping_products`
+Oct 17 21:42:59 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:42:59 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 21:42:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 21:42:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 21:42:59 symfony [info] {sfWebDebugLogger} Configuration 1.56 ms (9)
+Oct 17 21:42:59 symfony [info] {sfWebDebugLogger} Factories 38.55 ms (1)
+Oct 17 21:42:59 symfony [info] {sfWebDebugLogger} Action "shipping_prices/create" 73.60 ms (1)
+Oct 17 21:42:59 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/create" 33.05 ms (1)
+Oct 17 21:42:59 symfony [info] {sfWebDebugLogger} Partial "shipping_prices/_form" 17.51 ms (1)
+Oct 17 21:42:59 symfony [info] {sfWebResponse} Send content (50747 o)
+Oct 17 22:24:08 symfony [info] {myUser} Automatic user logout due to timeout
+Oct 17 22:24:08 symfony [info] {myUser} User is not authenticated
+Oct 17 22:24:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/shipping_prices/" (/).
+Oct 17 22:24:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 17 22:24:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:24:08 symfony [info] {sfWebDebugLogger} Configuration 91.40 ms (6)
+Oct 17 22:24:08 symfony [info] {sfWebDebugLogger} Factories 38.23 ms (1)
+Oct 17 22:24:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /shipping_prices with parameters array (  'module' => 'shipping_prices',  'action' => 'index',)
+Oct 17 22:24:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:24:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:24:13 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeIndex()"
+Oct 17 22:24:13 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:24:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT shipping_prices.COURIER_ID, shipping_prices.PRODUCT_ID, shipping_prices.SERVICE_ID, shipping_prices.PRICE, shipping_prices.PROM_PRICE, shipping_prices.IS_DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE_WHAT_IF, shipping_prices.SHOW, shipping_prices.IS_DEFAULT, shipping_prices.IS_PROM, shipping_prices.IS_AVAILABLE, shipping_prices.NOTICE FROM `shipping_prices`
+Oct 17 22:24:13 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/indexSuccess.php"
+Oct 17 22:24:13 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:24:13 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:24:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:24:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:24:13 symfony [info] {sfWebDebugLogger} Configuration 1.60 ms (9)
+Oct 17 22:24:13 symfony [info] {sfWebDebugLogger} Factories 30.97 ms (1)
+Oct 17 22:24:13 symfony [info] {sfWebDebugLogger} Action "shipping_prices/index" 24.51 ms (1)
+Oct 17 22:24:13 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/index" 14.46 ms (1)
+Oct 17 22:24:13 symfony [info] {sfWebResponse} Send content (31055 o)
+Oct 17 22:24:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/new with parameters array (  'module' => 'shipping_prices',  'action' => 'new',)
+Oct 17 22:24:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:24:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:24:15 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeNew()"
+Oct 17 22:24:15 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/newSuccess.php"
+Oct 17 22:24:15 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/_form.php"
+Oct 17 22:24:15 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:24:15 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:24:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:24:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:24:15 symfony [info] {sfWebDebugLogger} Configuration 1.51 ms (9)
+Oct 17 22:24:15 symfony [info] {sfWebDebugLogger} Factories 30.98 ms (1)
+Oct 17 22:24:15 symfony [info] {sfWebDebugLogger} Action "shipping_prices/new" 33.92 ms (1)
+Oct 17 22:24:15 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/new" 23.56 ms (1)
+Oct 17 22:24:15 symfony [info] {sfWebDebugLogger} Partial "shipping_prices/_form" 8.57 ms (1)
+Oct 17 22:24:15 symfony [info] {sfWebResponse} Send content (38808 o)
+Oct 17 22:25:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /courier with parameters array (  'module' => 'courier',  'action' => 'index',)
+Oct 17 22:25:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:25:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:25:39 symfony [info] {courierActions} Call "courierActions->executeIndex()"
+Oct 17 22:25:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:25:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 22:25:39 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/indexSuccess.php"
+Oct 17 22:25:39 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:39 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:25:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:25:39 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (9)
+Oct 17 22:25:39 symfony [info] {sfWebDebugLogger} Factories 37.07 ms (1)
+Oct 17 22:25:39 symfony [info] {sfWebDebugLogger} Action "courier/index" 21.69 ms (1)
+Oct 17 22:25:39 symfony [info] {sfWebDebugLogger} View "Success" for "courier/index" 13.99 ms (1)
+Oct 17 22:25:39 symfony [info] {sfWebResponse} Send content (29878 o)
+Oct 17 22:25:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /courier/new with parameters array (  'module' => 'courier',  'action' => 'new',)
+Oct 17 22:25:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:25:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:25:41 symfony [info] {courierActions} Call "courierActions->executeNew()"
+Oct 17 22:25:41 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/newSuccess.php"
+Oct 17 22:25:41 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/_form.php"
+Oct 17 22:25:41 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:41 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:25:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:25:41 symfony [info] {sfWebDebugLogger} Configuration 1.51 ms (9)
+Oct 17 22:25:41 symfony [info] {sfWebDebugLogger} Factories 35.09 ms (1)
+Oct 17 22:25:41 symfony [info] {sfWebDebugLogger} Action "courier/new" 34.99 ms (1)
+Oct 17 22:25:41 symfony [info] {sfWebDebugLogger} View "Success" for "courier/new" 20.47 ms (1)
+Oct 17 22:25:41 symfony [info] {sfWebDebugLogger} Partial "courier/_form" 6.28 ms (1)
+Oct 17 22:25:41 symfony [info] {sfWebResponse} Send content (31835 o)
+Oct 17 22:25:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /courier/create with parameters array (  'module' => 'courier',  'action' => 'create',)
+Oct 17 22:25:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:25:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:25:45 symfony [info] {courierActions} Call "courierActions->executeCreate()"
+Oct 17 22:25:45 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:25:45 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | INSERT INTO courier (`ID`,`NAME`) VALUES (NULL,'UPS')
+Oct 17 22:25:45 symfony [debug] {sfPropelLogger} time:  0.013 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.8 MB | memdelta:      0.0 B | DELETE FROM shipping_prices WHERE shipping_prices.COURIER_ID=1
+Oct 17 22:25:45 symfony [info] {sfFrontWebController} Redirect to "http://rally.localhost/e-certus/web/admin_dev.php/courier/edit/id/1"
+Oct 17 22:25:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Oct 17 22:25:45 symfony [info] {sfWebResponse} Send header "Location: http://rally.localhost/e-certus/web/admin_dev.php/courier/edit/id/1"
+Oct 17 22:25:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:25:45 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (8)
+Oct 17 22:25:45 symfony [info] {sfWebDebugLogger} Factories 35.08 ms (1)
+Oct 17 22:25:45 symfony [info] {sfWebDebugLogger} Action "courier/create" 63.98 ms (1)
+Oct 17 22:25:45 symfony [info] {sfWebResponse} Send content (138 o)
+Oct 17 22:25:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /courier/edit/id/1 with parameters array (  'module' => 'courier',  'action' => 'edit',  'id' => '1',)
+Oct 17 22:25:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:25:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:25:45 symfony [info] {courierActions} Call "courierActions->executeEdit()"
+Oct 17 22:25:45 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:25:45 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier` WHERE courier.ID='1'
+Oct 17 22:25:46 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT shipping_prices.COURIER_ID, shipping_prices.PRODUCT_ID, shipping_prices.SERVICE_ID, shipping_prices.PRICE, shipping_prices.PROM_PRICE, shipping_prices.IS_DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE_WHAT_IF, shipping_prices.SHOW, shipping_prices.IS_DEFAULT, shipping_prices.IS_PROM, shipping_prices.IS_AVAILABLE, shipping_prices.NOTICE FROM `shipping_prices` WHERE shipping_prices.COURIER_ID=1
+Oct 17 22:25:46 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/editSuccess.php"
+Oct 17 22:25:46 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/courier/templates/_form.php"
+Oct 17 22:25:46 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:46 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:25:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:25:46 symfony [info] {sfWebDebugLogger} Configuration 1.62 ms (9)
+Oct 17 22:25:46 symfony [info] {sfWebDebugLogger} Factories 36.40 ms (1)
+Oct 17 22:25:46 symfony [info] {sfWebDebugLogger} Action "courier/edit" 51.83 ms (1)
+Oct 17 22:25:46 symfony [info] {sfWebDebugLogger} View "Success" for "courier/edit" 22.11 ms (1)
+Oct 17 22:25:46 symfony [info] {sfWebDebugLogger} Partial "courier/_form" 7.19 ms (1)
+Oct 17 22:25:46 symfony [info] {sfWebResponse} Send content (36822 o)
+Oct 17 22:25:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /shipping_prices_groups with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'index',)
+Oct 17 22:25:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:25:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:25:55 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeIndex()"
+Oct 17 22:25:55 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:25:55 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 22:25:55 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/indexSuccess.php"
+Oct 17 22:25:55 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:55 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:25:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:25:55 symfony [info] {sfWebDebugLogger} Configuration 1.53 ms (9)
+Oct 17 22:25:55 symfony [info] {sfWebDebugLogger} Factories 37.90 ms (1)
+Oct 17 22:25:55 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/index" 22.71 ms (1)
+Oct 17 22:25:55 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices_groups/index" 14.00 ms (1)
+Oct 17 22:25:55 symfony [info] {sfWebResponse} Send content (30402 o)
+Oct 17 22:25:57 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices_groups/new with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'new',)
+Oct 17 22:25:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:25:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:25:57 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeNew()"
+Oct 17 22:25:57 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/newSuccess.php"
+Oct 17 22:25:57 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/_form.php"
+Oct 17 22:25:57 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:57 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:25:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:25:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:25:57 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (9)
+Oct 17 22:25:57 symfony [info] {sfWebDebugLogger} Factories 37.81 ms (1)
+Oct 17 22:25:57 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/new" 28.27 ms (1)
+Oct 17 22:25:57 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices_groups/new" 20.15 ms (1)
+Oct 17 22:25:57 symfony [info] {sfWebDebugLogger} Partial "shipping_prices_groups/_form" 5.39 ms (1)
+Oct 17 22:25:57 symfony [info] {sfWebResponse} Send content (32611 o)
+Oct 17 22:26:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices_groups/create with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'create',)
+Oct 17 22:26:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:02 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeCreate()"
+Oct 17 22:26:02 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.0 MB | mempeak:    5.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:02 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | INSERT INTO shipping_prices_groups (`ID`,`NAME`,`IS_ACTIVE`) VALUES (NULL,'doręczenie następnego dnia roboczego',1)
+Oct 17 22:26:02 symfony [info] {sfFrontWebController} Redirect to "http://rally.localhost/e-certus/web/admin_dev.php/shipping_prices_groups/edit/id/1"
+Oct 17 22:26:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Oct 17 22:26:02 symfony [info] {sfWebResponse} Send header "Location: http://rally.localhost/e-certus/web/admin_dev.php/shipping_prices_groups/edit/id/1"
+Oct 17 22:26:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:02 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (8)
+Oct 17 22:26:02 symfony [info] {sfWebDebugLogger} Factories 37.50 ms (1)
+Oct 17 22:26:02 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/create" 42.16 ms (1)
+Oct 17 22:26:02 symfony [info] {sfWebResponse} Send content (153 o)
+Oct 17 22:26:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices_groups/edit/id/1 with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'edit',  'id' => '1',)
+Oct 17 22:26:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:02 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeEdit()"
+Oct 17 22:26:02 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:02 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups` WHERE shipping_prices_groups.ID='1'
+Oct 17 22:26:02 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/editSuccess.php"
+Oct 17 22:26:02 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/_form.php"
+Oct 17 22:26:02 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:02 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:26:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:02 symfony [info] {sfWebDebugLogger} Configuration 1.54 ms (9)
+Oct 17 22:26:02 symfony [info] {sfWebDebugLogger} Factories 38.52 ms (1)
+Oct 17 22:26:02 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/edit" 38.96 ms (1)
+Oct 17 22:26:02 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices_groups/edit" 21.36 ms (1)
+Oct 17 22:26:02 symfony [info] {sfWebDebugLogger} Partial "shipping_prices_groups/_form" 6.48 ms (1)
+Oct 17 22:26:02 symfony [info] {sfWebResponse} Send content (36078 o)
+Oct 17 22:26:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /shipping_prices_groups with parameters array (  'module' => 'shipping_prices_groups',  'action' => 'index',)
+Oct 17 22:26:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:06 symfony [info] {shipping_prices_groupsActions} Call "shipping_prices_groupsActions->executeIndex()"
+Oct 17 22:26:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 22:26:06 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices_groups/templates/indexSuccess.php"
+Oct 17 22:26:06 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:06 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:26:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:06 symfony [info] {sfWebDebugLogger} Configuration 1.58 ms (9)
+Oct 17 22:26:06 symfony [info] {sfWebDebugLogger} Factories 38.99 ms (1)
+Oct 17 22:26:06 symfony [info] {sfWebDebugLogger} Action "shipping_prices_groups/index" 26.01 ms (1)
+Oct 17 22:26:06 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices_groups/index" 14.60 ms (1)
+Oct 17 22:26:06 symfony [info] {sfWebResponse} Send content (30699 o)
+Oct 17 22:26:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /shipping_products with parameters array (  'module' => 'shipping_products',  'action' => 'index',)
+Oct 17 22:26:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:13 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeIndex()"
+Oct 17 22:26:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT shipping_products.ID, shipping_products.GROUP_ID, shipping_products.NAME, shipping_products.IS_ACTIVE, shipping_products.WEIGHT_FROM, shipping_products.WEIGHT_TO FROM `shipping_products`
+Oct 17 22:26:13 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/indexSuccess.php"
+Oct 17 22:26:13 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:13 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:26:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:13 symfony [info] {sfWebDebugLogger} Configuration 1.57 ms (9)
+Oct 17 22:26:13 symfony [info] {sfWebDebugLogger} Factories 37.28 ms (1)
+Oct 17 22:26:13 symfony [info] {sfWebDebugLogger} Action "shipping_products/index" 22.58 ms (1)
+Oct 17 22:26:13 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_products/index" 14.06 ms (1)
+Oct 17 22:26:13 symfony [info] {sfWebResponse} Send content (30498 o)
+Oct 17 22:26:14 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_products/new with parameters array (  'module' => 'shipping_products',  'action' => 'new',)
+Oct 17 22:26:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:14 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeNew()"
+Oct 17 22:26:14 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/newSuccess.php"
+Oct 17 22:26:14 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/_form.php"
+Oct 17 22:26:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 22:26:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 22:26:14 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:14 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:26:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:14 symfony [info] {sfWebDebugLogger} Configuration 1.51 ms (9)
+Oct 17 22:26:14 symfony [info] {sfWebDebugLogger} Factories 38.77 ms (1)
+Oct 17 22:26:14 symfony [info] {sfWebDebugLogger} Action "shipping_products/new" 38.30 ms (1)
+Oct 17 22:26:14 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_products/new" 43.67 ms (1)
+Oct 17 22:26:14 symfony [info] {sfWebDebugLogger} Partial "shipping_products/_form" 28.84 ms (1)
+Oct 17 22:26:14 symfony [info] {sfWebResponse} Send content (38646 o)
+Oct 17 22:26:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_products/create with parameters array (  'module' => 'shipping_products',  'action' => 'create',)
+Oct 17 22:26:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:46 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeCreate()"
+Oct 17 22:26:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `shipping_prices_groups` WHERE shipping_prices_groups.ID='1'
+Oct 17 22:26:46 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:  +256.0 kB | SELECT COUNT(*) FROM `courier` WHERE courier.ID IN ('1')
+Oct 17 22:26:46 symfony [info] {shipping_productsActions} Change template to "CURRENT/new"
+Oct 17 22:26:46 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/newSuccess.php"
+Oct 17 22:26:46 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/_form.php"
+Oct 17 22:26:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 22:26:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 22:26:46 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:46 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:26:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:46 symfony [info] {sfWebDebugLogger} Configuration 1.52 ms (9)
+Oct 17 22:26:46 symfony [info] {sfWebDebugLogger} Factories 38.11 ms (1)
+Oct 17 22:26:46 symfony [info] {sfWebDebugLogger} Action "shipping_products/create" 60.58 ms (1)
+Oct 17 22:26:46 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_products/create" 26.48 ms (1)
+Oct 17 22:26:46 symfony [info] {sfWebDebugLogger} Partial "shipping_products/_form" 11.24 ms (1)
+Oct 17 22:26:46 symfony [info] {sfWebResponse} Send content (42337 o)
+Oct 17 22:26:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_products/create with parameters array (  'module' => 'shipping_products',  'action' => 'create',)
+Oct 17 22:26:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:51 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeCreate()"
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `shipping_prices_groups` WHERE shipping_prices_groups.ID='1'
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `courier` WHERE courier.ID IN ('1')
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.3 MB | memdelta:      0.0 B | INSERT INTO shipping_products (`ID`,`GROUP_ID`,`NAME`,`IS_ACTIVE`) VALUES (NULL,1,'Przesyłka kopertowa oraz paczka do 30 kg',1)
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | DELETE FROM shipping_prices WHERE shipping_prices.PRODUCT_ID=1
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | INSERT INTO shipping_prices (`COURIER_ID`,`PRODUCT_ID`) VALUES (1,1)
+Oct 17 22:26:51 symfony [info] {sfFrontWebController} Redirect to "http://rally.localhost/e-certus/web/admin_dev.php/shipping_products/edit/id/1"
+Oct 17 22:26:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Oct 17 22:26:51 symfony [info] {sfWebResponse} Send header "Location: http://rally.localhost/e-certus/web/admin_dev.php/shipping_products/edit/id/1"
+Oct 17 22:26:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:51 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (8)
+Oct 17 22:26:51 symfony [info] {sfWebDebugLogger} Factories 37.70 ms (1)
+Oct 17 22:26:51 symfony [info] {sfWebDebugLogger} Action "shipping_products/create" 75.79 ms (1)
+Oct 17 22:26:51 symfony [info] {sfWebResponse} Send content (148 o)
+Oct 17 22:26:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_products/edit/id/1 with parameters array (  'module' => 'shipping_products',  'action' => 'edit',  'id' => '1',)
+Oct 17 22:26:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:51 symfony [info] {shipping_productsActions} Call "shipping_productsActions->executeEdit()"
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT shipping_products.ID, shipping_products.GROUP_ID, shipping_products.NAME, shipping_products.IS_ACTIVE, shipping_products.WEIGHT_FROM, shipping_products.WEIGHT_TO FROM `shipping_products` WHERE shipping_products.ID='1'
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT shipping_prices.COURIER_ID, shipping_prices.PRODUCT_ID, shipping_prices.SERVICE_ID, shipping_prices.PRICE, shipping_prices.PROM_PRICE, shipping_prices.IS_DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE_WHAT_IF, shipping_prices.SHOW, shipping_prices.IS_DEFAULT, shipping_prices.IS_PROM, shipping_prices.IS_AVAILABLE, shipping_prices.NOTICE FROM `shipping_prices` WHERE shipping_prices.PRODUCT_ID=1
+Oct 17 22:26:51 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/editSuccess.php"
+Oct 17 22:26:51 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_products/templates/_form.php"
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT shipping_prices_groups.ID, shipping_prices_groups.NAME, shipping_prices_groups.IS_ACTIVE FROM `shipping_prices_groups`
+Oct 17 22:26:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT courier.ID, courier.NAME FROM `courier`
+Oct 17 22:26:51 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:51 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:26:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:51 symfony [info] {sfWebDebugLogger} Configuration 1.57 ms (9)
+Oct 17 22:26:51 symfony [info] {sfWebDebugLogger} Factories 38.01 ms (1)
+Oct 17 22:26:51 symfony [info] {sfWebDebugLogger} Action "shipping_products/edit" 56.00 ms (1)
+Oct 17 22:26:51 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_products/edit" 39.83 ms (1)
+Oct 17 22:26:51 symfony [info] {sfWebDebugLogger} Partial "shipping_products/_form" 24.38 ms (1)
+Oct 17 22:26:51 symfony [info] {sfWebResponse} Send content (42679 o)
+Oct 17 22:26:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /shipping_prices with parameters array (  'module' => 'shipping_prices',  'action' => 'index',)
+Oct 17 22:26:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:26:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:26:57 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeIndex()"
+Oct 17 22:26:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:26:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT shipping_prices.COURIER_ID, shipping_prices.PRODUCT_ID, shipping_prices.SERVICE_ID, shipping_prices.PRICE, shipping_prices.PROM_PRICE, shipping_prices.IS_DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE, shipping_prices.DYNAMIC_PRICE_WHAT_IF, shipping_prices.SHOW, shipping_prices.IS_DEFAULT, shipping_prices.IS_PROM, shipping_prices.IS_AVAILABLE, shipping_prices.NOTICE FROM `shipping_prices`
+Oct 17 22:26:57 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/indexSuccess.php"
+Oct 17 22:26:57 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:57 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:26:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:26:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:26:57 symfony [info] {sfWebDebugLogger} Configuration 1.52 ms (9)
+Oct 17 22:26:57 symfony [info] {sfWebDebugLogger} Factories 37.88 ms (1)
+Oct 17 22:26:57 symfony [info] {sfWebDebugLogger} Action "shipping_prices/index" 29.79 ms (1)
+Oct 17 22:26:57 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/index" 14.86 ms (1)
+Oct 17 22:26:57 symfony [info] {sfWebResponse} Send content (31473 o)
+Oct 17 22:27:03 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/new with parameters array (  'module' => 'shipping_prices',  'action' => 'new',)
+Oct 17 22:27:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:27:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:27:03 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeNew()"
+Oct 17 22:27:03 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/newSuccess.php"
+Oct 17 22:27:03 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/_form.php"
+Oct 17 22:27:03 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:27:03 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:27:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:27:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:27:03 symfony [info] {sfWebDebugLogger} Configuration 1.51 ms (9)
+Oct 17 22:27:03 symfony [info] {sfWebDebugLogger} Factories 34.80 ms (1)
+Oct 17 22:27:03 symfony [info] {sfWebDebugLogger} Action "shipping_prices/new" 33.92 ms (1)
+Oct 17 22:27:03 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/new" 23.20 ms (1)
+Oct 17 22:27:03 symfony [info] {sfWebDebugLogger} Partial "shipping_prices/_form" 8.99 ms (1)
+Oct 17 22:27:03 symfony [info] {sfWebResponse} Send content (38808 o)
+Oct 17 22:27:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/new with parameters array (  'module' => 'shipping_prices',  'action' => 'new',)
+Oct 17 22:27:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:27:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:27:46 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeNew()"
+Oct 17 22:27:46 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/newSuccess.php"
+Oct 17 22:27:46 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/_form.php"
+Oct 17 22:27:46 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:27:46 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:27:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:27:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:27:46 symfony [info] {sfWebDebugLogger} Configuration 98.52 ms (10)
+Oct 17 22:27:46 symfony [info] {sfWebDebugLogger} Factories 43.30 ms (1)
+Oct 17 22:27:46 symfony [info] {sfWebDebugLogger} Action "shipping_prices/new" 34.27 ms (1)
+Oct 17 22:27:46 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/new" 23.56 ms (1)
+Oct 17 22:27:46 symfony [info] {sfWebDebugLogger} Partial "shipping_prices/_form" 8.62 ms (1)
+Oct 17 22:27:46 symfony [info] {sfWebResponse} Send content (38842 o)
+Oct 17 22:27:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/new with parameters array (  'module' => 'shipping_prices',  'action' => 'new',)
+Oct 17 22:27:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:27:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:27:47 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeNew()"
+Oct 17 22:27:47 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/newSuccess.php"
+Oct 17 22:27:47 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/_form.php"
+Oct 17 22:27:47 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:27:47 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:27:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:27:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:27:47 symfony [info] {sfWebDebugLogger} Configuration 1.56 ms (9)
+Oct 17 22:27:47 symfony [info] {sfWebDebugLogger} Factories 39.03 ms (1)
+Oct 17 22:27:47 symfony [info] {sfWebDebugLogger} Action "shipping_prices/new" 34.38 ms (1)
+Oct 17 22:27:47 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/new" 23.60 ms (1)
+Oct 17 22:27:47 symfony [info] {sfWebDebugLogger} Partial "shipping_prices/_form" 8.66 ms (1)
+Oct 17 22:27:47 symfony [info] {sfWebResponse} Send content (38840 o)
+Oct 17 22:32:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/new with parameters array (  'module' => 'shipping_prices',  'action' => 'new',)
+Oct 17 22:32:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:32:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:32:44 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeNew()"
+Oct 17 22:32:44 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/newSuccess.php"
+Oct 17 22:32:44 symfony [info] {sfPartialView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/modules/shipping_prices/templates/_form.php"
+Oct 17 22:32:44 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:32:44 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/admin/templates/layout.php"
+Oct 17 22:32:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 22:32:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:32:44 symfony [info] {sfWebDebugLogger} Configuration 1.57 ms (9)
+Oct 17 22:32:44 symfony [info] {sfWebDebugLogger} Factories 37.21 ms (1)
+Oct 17 22:32:44 symfony [info] {sfWebDebugLogger} Action "shipping_prices/new" 34.93 ms (1)
+Oct 17 22:32:44 symfony [info] {sfWebDebugLogger} View "Success" for "shipping_prices/new" 23.29 ms (1)
+Oct 17 22:32:44 symfony [info] {sfWebDebugLogger} Partial "shipping_prices/_form" 8.60 ms (1)
+Oct 17 22:32:44 symfony [info] {sfWebResponse} Send content (38840 o)
+Oct 17 22:33:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping_prices/create with parameters array (  'module' => 'shipping_prices',  'action' => 'create',)
+Oct 17 22:33:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 22:33:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 22:33:08 symfony [info] {shipping_pricesActions} Call "shipping_pricesActions->executeCreate()"
+Oct 17 22:33:08 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 17 22:33:08 symfony [err] {sfPropelLogger} SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`e-certus`.`shipping_prices`, CONSTRAINT `shipping_prices_FK_1` FOREIGN KEY (`courier_id`) REFERENCES `courier` (`id`))
+Oct 17 22:33:08 symfony [err] {PropelException} Unable to execute INSERT statement. [wrapped: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`e-certus`.`shipping_prices`, CONSTRAINT `shipping_prices_FK_1` FOREIGN KEY (`courier_id`) REFERENCES `courier` (`id`))]
+Oct 17 22:33:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 17 22:33:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 22:33:08 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (8)
+Oct 17 22:33:08 symfony [info] {sfWebDebugLogger} Factories 37.31 ms (1)
+Oct 17 22:33:08 symfony [info] {sfWebDebugLogger} Action "shipping_prices/create" 112.23 ms (1)

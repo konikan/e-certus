@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<database name="propel" defaultIdMethod="native" package="lib.model">
+
+   <table name="admin_users" phpName="AdminUsers">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="activity" type="boolean" default="false" required="false" />
+    <column name="username" type="varchar" size="255" required="true" />
+    <column name="password" type="varchar" size="255" required="true" />
+    <column name="password_ask" type="varchar" size="255" required="false" />
+    <column name="password_rep" type="varchar" size="255" required="false" />
+    <column name="email" type="varchar" size="255" required="true" />
+    <column name="name" type="varchar" size="255" />
+    <column name="surname" type="varchar" size="255" />
+    <column name="postcode" type="varchar" size="255" />
+    <column name="city" type="varchar" size="255" />
+    <column name="street" type="varchar" size="255" />
+    <column name="street_nr" type="varchar" size="10" />
+    <column name="local_nr" type="varchar" size="10" />
+    <column name="tel" type="varchar" size="255" />
+    <column name="bank_account" type="varchar" size="255" required="false" />
+    <column name="blocked" type="boolean" default="false" required="false" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+  <table name="users" phpName="Users">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="activity" type="boolean" default="false" required="false" />
+    <column name="email" type="varchar" size="255" required="true" />
+    <column name="password" type="varchar" size="255" required="true" />
+    <column name="password_ask" type="varchar" size="255" required="false" />
+    <column name="password_rep" type="varchar" size="255" required="false" />
+    <column name="is_company" type="boolean" default="true" />
+    <column name="name" type="varchar" size="255" />
+    <column name="surname" type="varchar" size="255" />
+    <column name="postcode" type="varchar" size="255" />
+    <column name="city" type="varchar" size="255" />
+    <column name="street" type="varchar" size="255" />
+    <column name="street_nr" type="varchar" size="10" />
+    <column name="local_nr" type="varchar" size="10" />
+    <column name="tel" type="varchar" size="255" />
+    <column name="company_name" type="varchar" size="255" required="false" />
+    <column name="company_nip" type="varchar" size="255" required="false" />
+    <column name="company_post_code" type="varchar" size="255" required="false" />
+    <column name="company_city" type="varchar" size="255" required="false" />
+    <column name="company_street" type="varchar" size="255" required="false" />
+    <column name="company_home_nr" type="varchar" size="10" required="false" />
+    <column name="company_local_nr" type="varchar" size="10" required="false" />
+    <column name="bank_name" type="varchar" size="255" required="false" />
+    <column name="bank_account" type="varchar" size="255" required="false" />
+    <column name="blocked" type="boolean" default="false" required="false" />
+    <column name="is_cash_on_delivery" type="boolean" default="false" required="false" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+  </table>
+
+  <table name="courier" phpName="Courier">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="name" type="varchar" size="255" required="true" />
+    <column name="available"  type="boolean" default="true" />
+    <column name="client_nr" type="varchar" size="255" required="false" />
+    <column name="api_key" type="varchar" size="255" required="false" />
+    <column name="login" type="varchar" size="255" required="false" />
+    <column name="pass" type="varchar" size="255" required="false" />
+    <column name="petrol_charge" type="DECIMAL" size="5" scale="4" required="false" default="0.00" />
+    <column name="start_work_time" type="time" required="false" />
+    <column name="end_work_time" type="time" required="false" />
+    <column name="desc"  type="longvarchar"  required="false" />
+    
+  </table>
+
+  <table name="packaging_groups" phpName="PackagingGroups" >
+      <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+      <column name="name" type="varchar" size="255" required="true" />
+      <column name="desc"  type="longvarchar"  required="false" />
+      <column name="available"  type="boolean" default="true" />
+      <column name="max_width" type="DECIMAL" size="10" scale="2" required="false" />
+      <column name="max_height" type="DECIMAL" size="10" scale="2" required="false" />
+      <column name="max_length" type="DECIMAL" size="10" scale="2" required="false" />
+      <column name="max_weight" type="DECIMAL" size="10" scale="2" required="false" />
+     
+  </table>
+
+  <table name="packaging_types" phpName="PackagingTypes" >
+      <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+      <column name="group_id" type="integer" />
+      <foreign-key foreignTable="packaging_groups" ondelete="cascade">
+        <reference local="group_id" foreign="id" />
+      </foreign-key>
+      <column name="courier_id" type="integer" />
+      <foreign-key foreignTable="courier">
+        <reference local="courier_id" foreign="id" />
+      </foreign-key>
+      <column name="name" type="varchar" size="255" required="true" />
+      <column name="service_id"  type="varchar" size="255"  required="false" />
+
+      <column name="desc"  type="longvarchar"  required="false" />
+      <column name="max_width" type="DECIMAL" size="10" scale="2" required="false" />
+      <column name="max_height" type="DECIMAL" size="10" scale="2" required="false" />
+      <column name="max_length" type="DECIMAL" size="10" scale="2" required="false" />
+      <column name="max_weight" type="DECIMAL" size="10" scale="2" required="false" />
+      <column name="max_lenght" type="DECIMAL" size="10" scale="2" required="false" />
+      <column name="available"  type="boolean" default="true" />
+  </table>
+
+  
+   
+
+  <table name="order_shipping" phpName="OrderShipping">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="user_id" type="integer" required="false" />
+    <foreign-key foreignTable="users" ondelete="setnull">
+        <reference local="user_id" foreign="id"  />
+    </foreign-key>
+    <column name="number" type="varchar" size="255" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+    <column name="status" type="varchar" size="255" />
+    <column name="outher_order_number" type="varchar" size="255" required="false" />
+    <column name="list_number" type="varchar" size="255" required="false" />
+    <column name="courier_id" type="integer" required="false" />
+    <foreign-key foreignTable="courier" ondelete="setnull">
+        <reference local="courier_id" foreign="id" />
+    </foreign-key>
+    <column name="width" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="height" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="length" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="normal_weight" type="DECIMAL" size="10" scale="2" required="false" />
+     <column name="weight" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="type_id" type="integer" />
+    <foreign-key foreignTable="shipping_types">
+        <reference local="type_id" foreign="id" />
+    </foreign-key>
+    <column name="packaging_type_id" type="integer" required="false" />
+    <foreign-key foreignTable="packaging_types" ondelete="setnull">
+        <reference local="packaging_type_id" foreign="id" />
+    </foreign-key>
+    <column name="date_of_receipt" type="date" required="false" />
+    <column name="receipt_time_start" type="time" required="false" />
+    <column name="receipt_time_end" type="time" required="false" />
+    <column name="self_giving" type="boolean" default="false" required="false"  />
+    <column name="self_giving_date" type="date" required="false" />
+    <column name="is_paid" type="boolean" default="false" />
+    <column name="paid_type" type="integer" required="false" />
+    <column name="number_of_packages" type="integer" required="false"  />
+    <column name="amount" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="vat" type="DECIMAL" size="4" scale="2" required="false" />
+    <column name="vat_amount" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="total_amount" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="notes"  type="longvarchar"  required="false" />
+  </table>
+
+  <table name="order_shipping_options">
+     <column name="order_id" type="integer"  primaryKey="true" />
+     <foreign-key foreignTable="order_shipping">
+        <reference local="order_id" foreign="id" />
+    </foreign-key>
+     <column name="option_id" type="integer"  primaryKey="true" />
+     <foreign-key foreignTable="shipping_options">
+        <reference local="option_id" foreign="id" />
+    </foreign-key>
+    <column name="option_value" type="varchar" size="255" required="false" />
+    <column name="option_price" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="amount" type="DECIMAL" size="10" scale="2" required="false" />
+    
+  </table>
+
+  <table name="order_shipping_sender">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+    <column name="is_company" type="tinyint" size="1" />
+    <column name="sender_name" type="varchar" size="255" required="true" />
+    <column name="contact_name" type="varchar" size="255" />
+    <column name="name" type="varchar" size="255" />
+    <column name="surname" type="varchar" size="255" />
+    <column name="postcode" type="varchar" size="255" />
+    <column name="city" type="varchar" size="255" />
+    <column name="street" type="varchar" size="255" />
+    <column name="street_nr" type="varchar" size="10" />
+    <column name="local_nr" type="varchar" size="10" />
+    <column name="tel" type="varchar" size="255" />
+    <column name="email" type="varchar" size="255" required="false" />
+     <column name="address" type="varchar" size="255" required="false" />
+    <column name="company_name" type="varchar" size="255" />
+    <column name="company_nip" type="varchar" size="255" />
+    <column name="company_post_code" type="varchar" size="255" />
+    <column name="company_city" type="varchar" size="255" />
+    <column name="company_street" type="varchar" size="255" />
+    <column name="company_home_nr" type="varchar" size="10" />
+    <column name="company_local_nr" type="varchar" size="10" />
+    <column name="order_id" type="integer" />
+     <foreign-key foreignTable="order_shipping" ondelete="cascade">
+        <reference local="order_id" foreign="id" />
+    </foreign-key>
+  </table>
+
+  <table name="order_shipping_recipient">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+    <column name="is_company" type="tinyint" size="1" />
+    <column name="recipient_name" type="varchar" size="255" required="true" />
+    <column name="contact_name" type="varchar" size="255" required="false" />
+    <column name="name" type="varchar" size="255" required="false" />
+    <column name="surname" type="varchar" size="255" required="false" />
+    <column name="postcode" type="varchar" size="255" />
+    <column name="city" type="varchar" size="255" />
+    <column name="address" type="varchar" size="255" required="true" />
+    <column name="street" type="varchar" size="255" required="false" />
+    <column name="street_nr" type="varchar" size="10" required="false" />
+    <column name="local_nr" type="varchar" size="10" required="false" />
+    <column name="tel" type="varchar" size="255" required="false" />
+    <column name="email" type="varchar" size="255" required="false" />
+    <column name="company_name" type="varchar" size="255" required="false"  />
+    <column name="company_nip" type="varchar" size="255" required="false" />
+    <column name="company_post_code" type="varchar" size="255" required="false" />
+    <column name="company_city" type="varchar" size="255" required="false" />
+    <column name="company_street" type="varchar" size="255" required="false" />
+    <column name="company_home_nr" type="varchar" size="10" required="false" />
+    <column name="company_local_nr" type="varchar" size="10" required="false" />
+    <column name="order_id" type="integer" ondelete="cascade" />
+     <foreign-key foreignTable="order_shipping">
+        <reference local="order_id" foreign="id" />
+    </foreign-key>
+  </table>
+
+  <table name="user_recipient">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="user_id" type="integer" required="false" />
+    <foreign-key foreignTable="users" ondelete="cascade">
+        <reference local="user_id" foreign="id"  />
+    </foreign-key>
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+    <column name="is_company" type="boolean" default="false" />
+    <column name="recipient_name" type="varchar" size="255" required="true" />
+    <column name="contact_name" type="varchar" size="255" required="false" />
+    <column name="name" type="varchar" size="255" required="false" />
+    <column name="surname" type="varchar" size="255" required="false" />
+    <column name="postcode" type="varchar" size="255" />
+    <column name="city" type="varchar" size="255" />
+    <column name="address" type="varchar" size="255" required="true" />
+    <column name="street" type="varchar" size="255" required="false" />
+    <column name="street_nr" type="varchar" size="10" required="false" />
+    <column name="local_nr" type="varchar" size="10" required="false" />
+    <column name="tel" type="varchar" size="255" required="false" />
+    <column name="email" type="varchar" size="255" required="false" />
+    <column name="company_name" type="varchar" size="255" required="false"  />
+    <column name="company_nip" type="varchar" size="255" required="false" />
+    <column name="company_post_code" type="varchar" size="255" required="false" />
+    <column name="company_city" type="varchar" size="255" required="false" />
+    <column name="company_street" type="varchar" size="255" required="false" />
+    <column name="company_home_nr" type="varchar" size="10" required="false" />
+    <column name="company_local_nr" type="varchar" size="10" required="false" />
+  </table>
+
+  <table name="user_sender">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="user_id" type="integer" required="false" />
+    <foreign-key foreignTable="users" ondelete="cascade">
+        <reference local="user_id" foreign="id"  />
+    </foreign-key>
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+    <column name="is_company" type="boolean" default="false" />
+    <column name="sender_name" type="varchar" size="255" required="true" />
+    <column name="contact_name" type="varchar" size="255" required="false" />
+    <column name="name" type="varchar" size="255" required="false" />
+    <column name="surname" type="varchar" size="255" required="false" />
+    <column name="postcode" type="varchar" size="255" />
+    <column name="city" type="varchar" size="255" />
+    <column name="address" type="varchar" size="255" required="true" />
+    <column name="street" type="varchar" size="255" required="false" />
+    <column name="street_nr" type="varchar" size="10" required="false" />
+    <column name="local_nr" type="varchar" size="10" required="false" />
+    <column name="tel" type="varchar" size="255" required="false" />
+    <column name="email" type="varchar" size="255" required="false" />
+    <column name="company_name" type="varchar" size="255" required="false"  />
+    <column name="company_nip" type="varchar" size="255" required="false" />
+    <column name="company_post_code" type="varchar" size="255" required="false" />
+    <column name="company_city" type="varchar" size="255" required="false" />
+    <column name="company_street" type="varchar" size="255" required="false" />
+    <column name="company_home_nr" type="varchar" size="10" required="false" />
+    <column name="company_local_nr" type="varchar" size="10" required="false" />
+  </table>
+
+  
+
+
+  <table name="shipping_types_groups">
+     <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+     <column name="courier_id" type="integer" required="true"  />
+    <foreign-key foreignTable="courier">
+        <reference local="courier_id" foreign="id" />
+    </foreign-key>
+    <column name="service_id" type="varchar" size="255" requred="false" />
+    <column name="name" type="varchar" size="255" required="true" />
+    <column name="name_tariff" type="varchar" size="255" required="false" />
+    <column name="short_name" type="varchar" size="255" required="false" />
+    <column name="code" type="varchar" size="255" required="true" />
+    <column name="is_active"  type="boolean" default="true"  />
+    <column name="type"  type="tinyint" size="2" required="false" />
+  </table>
+
+  
+
+  <table name="shipping_types" >
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="group_id" type="integer" required="true"  />
+    <foreign-key foreignTable="shipping_types_groups" ondelete="cascade">
+        <reference local="group_id" foreign="id" />
+    </foreign-key>
+   
+    
+     <column name="packaging_type_id" type="integer" required="false" />
+    <foreign-key foreignTable="packaging_types" ondelete="setnull" >
+        <reference local="packaging_type_id" foreign="id" />
+    </foreign-key>
+    
+    <column name="name" type="varchar" size="255" required="false" />
+    <column name="short_name" type="varchar" size="255" required="false" />
+    <column name="is_active"  type="boolean" default="true"  />
+    <column name="show_in_tariff"  type="boolean" default="true"  />
+    <column name="price" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="initial_weight" type="DECIMAL" size="10" scale="2" required="true" />
+    <column name="final_weight" type="DECIMAL" size="10" scale="2" required="true" />
+    <column name="is_prom" type="boolean" default="false" />
+    <column name="prom_price" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="is_dynamic_price" type="boolean" default="false" />
+    <column name="dynamic_price" type="DECIMAL" size="10" scale="2" required="false" />
+    <column name="dynamic_price_what_if" type="DECIMAL" size="10" scale="2" required="false" default="50.00" />
+    <column name="show" type="boolean" default="true" />
+    <column name="is_available" type="boolean" default="true" />
+    <column name="notice"  type="longvarchar"  required="false" />
+  </table>
+
+  <table name="shipping_options">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="courier_id" type="integer" required="true"  />
+    <foreign-key foreignTable="courier">
+        <reference local="courier_id" foreign="id" />
+    </foreign-key>
+    <column name="code" type="varchar" size="255" required="true" />
+    <column name="short_name" type="varchar" size="255" required="false" />
+    <column name="name" type="varchar" size="255" required="true" />
+    <column name="service_id" type="varchar" size="255" requred="false" />
+    <column name="is_public_access" type="boolean" default="true" />
+    <column name="is_available" type="boolean" default="true" />
+    <column name="show_in_calculate" type="boolean" default="true" />
+    <column name="show_in_tariff"  type="boolean" default="true"  />
+    <column name="cash_on_delivery" type="boolean" default="false" />
+    <column name="commission" type="DECIMAL" size="10" scale="4" required="false"  />
+    <column name="price" type="DECIMAL" size="10" scale="2" required="false"  />
+    <column name="insurance" type="boolean" default="false" />
+    <column name="free_insurance_limit" type="DECIMAL" size="10" scale="2" required="false"  />
+    <column name="additional_amount" type="boolean" default="false" />
+    <column name="notice"  type="longvarchar"  required="false" />
+    <column name="type" type="varchar" size="255" required="false" />
+
+  </table>
+
+
+  <table name="discounts">
+    <column name="user_id" type="integer" required="true" primaryKey="true" />
+    <foreign-key foreignTable="users">
+        <reference local="user_id" foreign="id" />
+    </foreign-key>
+    <column name="type_id" type="integer" required="true" primaryKey="true" />
+    <foreign-key foreignTable="shipping_types">
+        <reference local="type_id" foreign="id" />
+    </foreign-key>
+    <column name="discount" type="DECIMAL" size="10" scale="4" required="false"  />
+    <column name="active" type="boolean" default="true" />
+  </table>
+
+  <table name="config">
+    <column name="created_at" type="timestamp" />
+    <column name="updated_at" type="timestamp" />
+    <column name="name" type="VARCHAR" size="255" required="true" defaultValue="" primaryKey="true" />
+    <column name="value" type="LONGVARCHAR" required="true"  />
+  </table>
+
+  <table name="dhl_numbers" >
+      <column name="list_number" type="VARCHAR" size="255" required="true" defaultValue="" primaryKey="true" />
+      <column name="free" type="boolean" default="true" />
+       <column name="used" type="boolean" default="true" />
+       <column name="time_of_use" type="timestamp" required="false" />
+       <column name="order_id" type="integer" required="false"  />
+       <column name="created_at" type="timestamp" />
+        <column name="updated_at" type="timestamp" />
+  </table>
+
+  <table name="insurance_rates">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="courier_id" type="integer" required="true"  />
+    <foreign-key foreignTable="courier" ondelete="cascade">
+        <reference local="courier_id" foreign="id" />
+    </foreign-key>
+     <column name="amount_start" type="DECIMAL" size="10" scale="2" required="true" />
+     <column name="amount_end" type="DECIMAL" size="10" scale="2" required="true" />
+     <column name="price" type="DECIMAL" size="10" scale="2" required="true"  />
+  </table>
+  
+</database>

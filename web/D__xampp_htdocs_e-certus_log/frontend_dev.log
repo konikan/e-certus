@@ -1,0 +1,44 @@
+Oct 17 20:26:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Oct 17 20:26:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 20:26:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 20:26:22 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Oct 17 20:26:22 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Oct 17 20:26:22 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Oct 17 20:26:22 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Oct 17 20:26:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 20:26:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 20:26:22 symfony [info] {sfWebDebugLogger} Configuration 1375.57 ms (10)
+Oct 17 20:26:22 symfony [info] {sfWebDebugLogger} Factories 1757.38 ms (1)
+Oct 17 20:26:22 symfony [info] {sfWebDebugLogger} Action "default/index" 0.19 ms (1)
+Oct 17 20:26:22 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 23.20 ms (1)
+Oct 17 20:26:22 symfony [info] {sfWebResponse} Send content (29131 o)
+Oct 17 20:30:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping/calculate with parameters array (  'module' => 'shipping',  'action' => 'calculate',)
+Oct 17 20:30:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 20:30:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 20:30:23 symfony [info] {shippingActions} Call "shippingActions->executeCalculate()"
+Oct 17 20:30:23 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/frontend/modules/shipping/templates/calculateSuccess.php"
+Oct 17 20:30:23 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/frontend/templates/layout.php"
+Oct 17 20:30:23 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/frontend/templates/layout.php"
+Oct 17 20:30:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 20:30:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 20:30:23 symfony [info] {sfWebDebugLogger} Configuration 1.68 ms (9)
+Oct 17 20:30:23 symfony [info] {sfWebDebugLogger} Factories 37.91 ms (1)
+Oct 17 20:30:23 symfony [info] {sfWebDebugLogger} Action "shipping/calculate" 0.16 ms (1)
+Oct 17 20:30:23 symfony [info] {sfWebDebugLogger} View "Success" for "shipping/calculate" 16.14 ms (1)
+Oct 17 20:30:23 symfony [info] {sfWebResponse} Send content (28790 o)
+Oct 17 20:30:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /shipping/calculate with parameters array (  'module' => 'shipping',  'action' => 'calculate',)
+Oct 17 20:30:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 17 20:30:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 17 20:30:26 symfony [info] {shippingActions} Call "shippingActions->executeCalculate()"
+Oct 17 20:30:26 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/frontend/modules/shipping/templates/calculateSuccess.php"
+Oct 17 20:30:26 symfony [info] {sfPHPView} Decorate content with "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/frontend/templates/layout.php"
+Oct 17 20:30:26 symfony [info] {sfPHPView} Render "/Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/frontend/templates/layout.php"
+Oct 17 20:30:26 symfony [warning] {sfWebDebugLogger}  Warning at /Volumes/KONIKAN_8GB/PROJEKTY/e-certus/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/frontend/modules/shipping/actions/actions.class.php:28))
+Oct 17 20:30:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 17 20:30:26 symfony [warning] {sfWebDebugLogger}  Warning at /Volumes/KONIKAN_8GB/PROJEKTY/e-certus/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Volumes/KONIKAN_8GB/PROJEKTY/e-certus/apps/frontend/modules/shipping/actions/actions.class.php:28))
+Oct 17 20:30:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 17 20:30:26 symfony [info] {sfWebDebugLogger} Configuration 1.54 ms (9)
+Oct 17 20:30:26 symfony [info] {sfWebDebugLogger} Factories 36.51 ms (1)
+Oct 17 20:30:26 symfony [info] {sfWebDebugLogger} Action "shipping/calculate" 0.22 ms (1)
+Oct 17 20:30:26 symfony [info] {sfWebDebugLogger} View "Success" for "shipping/calculate" 15.55 ms (1)
+Oct 17 20:30:26 symfony [info] {sfWebResponse} Send content (29267 o)
